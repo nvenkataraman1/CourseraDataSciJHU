@@ -1,5 +1,5 @@
 ## Read data into dataframe
-hpc <- read.csv("./assignments/p1/filtereddata.csv",header=TRUE,stringsAsFactors=FALSE)
+hpc <- read.csv("./assignments/p1/data/filtereddata.csv",header=TRUE,stringsAsFactors=FALSE)
 
 hpc <- cbind(hpc,as.POSIXlt(paste(hpc$Date,hpc$Time),format="%d/%m/%Y %H:%M:%S"))
 names(hpc)[10] <- c("datetime")
