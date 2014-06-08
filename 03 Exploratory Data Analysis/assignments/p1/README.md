@@ -11,6 +11,6 @@ Operation steps
 <ol>
     <li>Navigate to the prefilter folder.</li>
     <li>Unzip the dataset into the prefilter folder. This generates a file named household_power_consumption.txt</li>
-    <li>Run the shell script prefilter.sh using the command **sh ./prefilter.sh** on the Unix command line. Note: make sure you have necessary permissions to execute this script.</li>
+    <li>Run the shell script prefilter.sh using the command sh ./prefilter.sh on the Unix command line. Note: make sure you have necessary permissions to execute this script.</li>
     <li>This will place a file named filtereddata.csv into the data folder. This file is then used for operations for this assignment using the R code files in the code folder.</li>
 </ol>
