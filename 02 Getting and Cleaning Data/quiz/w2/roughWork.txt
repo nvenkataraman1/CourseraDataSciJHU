@@ -1,0 +1,21 @@
+## breaks when using https
+
+x <- read.fwf(
+  file=url("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for"),
+  skip=4,
+  widths=c(12, 7,4, 9,4, 9,4, 9,4))
+
+## using http
+
+x <- read.fwf(
+  file=url("http://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for"),
+  skip=4,
+  widths=c(12, 7,4, 9,4, 9,4, 9,4))
+
+## to count number of chars in a char vector on particular lines
+
+nchar(x[c(10,20,30,100)], type = "chars", allowNA = FALSE)
+
+## general usage
+
+nchar(x, type = "chars", allowNA = FALSE)
