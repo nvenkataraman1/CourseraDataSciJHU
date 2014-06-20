@@ -39,7 +39,7 @@ p <- p +
         ylab("Emissions ('000 tons)")
 
 ## plotting chart title
-p <- p + ggtitle("Emissions from Coal Combustion sources\n(1998 - 2008)\n")
+p <- p + ggtitle("Emissions from Coal Combustion sources\n(1999 - 2008)\n")
 
 print(p)
 
