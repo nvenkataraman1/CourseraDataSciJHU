@@ -29,7 +29,7 @@ x <- factor(ey$year)
 png(file="../plots/plot6.png",height=480,width=480)
 
 ## base plot
-p <- ggplot(ey,aes(x=x,y=y,colour=city,group=1))
+p <- ggplot(ey,aes(x=x,y=y,group=1))
 
 ## plotting lines, points
 p <- p + 

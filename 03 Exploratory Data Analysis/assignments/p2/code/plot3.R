@@ -14,7 +14,7 @@ ey <- ndf %>%
 png(file="../plots/plot3.png",height=480,width=480)
 
 ## base plot
-p <- ggplot(ey,aes(x=year,y=emission,colour=type))
+p <- ggplot(ey,aes(x=year,y=emission,group=1))
 
 ## adding elements
 p <- p + 

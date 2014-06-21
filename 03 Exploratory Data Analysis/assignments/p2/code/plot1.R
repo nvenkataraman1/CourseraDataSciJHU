@@ -14,13 +14,6 @@ x <- ey$year
 
 png(file="../plots/plot1.png",height=480,width=480)
 
-## plot sample 1: plain
-##plot(x,y,xlab="",ylab="Emissions (tons)",main="Total Emissions by Year (1999 - 2008)")
-
-## plot sample 2: lines with circle markings
-## plot(x,y,xlab="",ylab="Emissions (tons)",main="Total Emissions by Year (1999 - 2008)",type="l")
-## points(ey,cex=1.5,col="black")
-
 ## plot sample 3: with labels
 
 plot(x,y,xlab="Year",ylab="Emissions (million tons)",main="Total Emissions by Year (1999 - 2008)",sub="* data for some years not present",type="l",yaxt="n",xlim=c(1998,2010),lty=2)
