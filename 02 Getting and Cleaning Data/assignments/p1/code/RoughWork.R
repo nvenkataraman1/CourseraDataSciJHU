@@ -13,3 +13,13 @@ features <- read.fwf(
     widths=c(3, 36))
 
 names(features) <- c("srno","feature")
+
+## custom quantiles
+quantile(jpgfile,probs=c(.3,.8))
+
+#### Code for answers to Quiz 3
+
+## Quiz 3 - Q 5
+
+gdp_merge$gdpquant <- cut2(gdp_merge$V2,g=5)
+table(gdp_merge$gdpquant,gdp_merge$Income.Group)

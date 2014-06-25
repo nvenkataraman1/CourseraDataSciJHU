@@ -11,15 +11,16 @@ ey <- ndf %>%
         summarise(emission=sum(Emissions))
 
 ## plotting the graph
-png(file="../plots/plot3.png",height=480,width=480)
+png(file="../plots/plot3b.png",height=480,width=480)
 
 ## base plot
 p <- ggplot(ey,aes(x=year,y=emission,group=1))
 
 ## adding elements
 p <- p + 
-    geom_line() + 
+    #geom_line() + 
     geom_point(size=3) + 
+    geom_smooth(method="lm") +
     geom_text(size=3,aes(y=ey$emission+75,label=round(emission,1))) + 
     facet_grid(type ~ ., scales="free_y")
 
