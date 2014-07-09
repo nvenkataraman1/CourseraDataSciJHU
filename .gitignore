@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 .Rproj.user
 .Rhistory
 .RData
+=======
+.DS_Store
+.Rhistory
+.cache/
+.Rproj.user
+.RData
+
+>>>>>>> abf411d410ebe150dad2ffa172ea1dcedaa7322e
